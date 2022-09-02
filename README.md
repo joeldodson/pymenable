@@ -22,4 +22,14 @@ Interested in contributing? Check out the contributing guidelines. Please note t
 
 ## Credits
 
-`pymenable` was created with [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter).
+`pymenable` was created with
+[`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/)
+and the
+[`py-pkgs-cookiecutter` template](https://github.com/py-pkgs/py-pkgs-cookiecutter).
+
+The initial code for `pymenable` and the `examples`, came from the `ui` and `uiTest` (respectively) packages from the
+[`aclu` (Accessible Command Line Utilities) project](https://github.com/ringcentral/aclu)
+I started while at RingCentral.
+
+The structure of the code including boilerplate for documentation and packaging came from the
+[book on Python Packaging, _Python Packages_](https://py-pkgs.org/).

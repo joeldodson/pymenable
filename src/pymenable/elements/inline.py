@@ -1,7 +1,4 @@
-"""  aclu/ui/elements/utils.py 
-simple dataclasses for props used by templates in ui/templates/utils.html
-I realize I'm duplicating the definition of StrOrDict here (see acluutils.py
-I want to keep ui a self contained package and maybe break it out from aclu some day )
+"""  pymenable/src/pymenable/elements/inline.py 
 """
 
 from datetime import datetime as dt 
@@ -47,7 +44,7 @@ class Paragraph(BaseElement):
     Paragraph(f'Visit, {Anchor("https://mysite.com", "My Lovely Website")}, to learn about me')
     will render the output:
     <p>Visit, <a href="https://mysite.com">My Lovely Website</a>, to learn about me</p>
-    Objects of classes derived from Baseelement are rendered as HTML when evaluated by jinja in a template. 
+    Objects of classes derived from Baseelement are rendered as HTML when evaluated to a string.
     """
     def __init__(self, contents: Any, **kwArgs):
         super().__init__(tag='p', contents=contents, **kwArgs)
